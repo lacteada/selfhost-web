@@ -31,8 +31,9 @@
     
     <div class="w-full max-w-sm sm:max-w-md space-y-8 animate-in mx-auto relative">
 
-        <button onclick="toggleModal()" class="absolute top-1 right-1 p-2 text-zinc-600 hover:text-white transition-colors">
-            <i data-lucide="info" class="w-5 h-5"></i>
+        <button onclick="toggleModal()" class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-2xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-400 hover:bg-emerald-500/10 transition-all text-sm group">
+            <i data-lucide="help-circle" class="w-5 h-5 transition-transform group-hover:scale-110"></i>
+            <span class="font-semibold">Connect Remotely?</span>
         </button>
 
         <header class="text-center space-y-2">
@@ -79,19 +80,19 @@
 
             <div class="space-y-4 text-sm text-zinc-400">
                 <p class="leading-relaxed">
-                    All remote connections outside of localhost must be made through a secure VPN.
+                    To access these services from outside the local network, you need to be connected to the secure VPN.
                 </p>
 
                 <!-- Tailscale Button -->
-                <a href="https://login.tailscale.com" target="_blank" 
+                <a href="https://tailscale.com/download" target="_blank" 
                    class="flex items-center justify-between p-3 rounded-xl bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 hover:border-zinc-700 transition-all group">
                     <div class="flex items-center gap-3">
                          <div class="p-2 bg-black rounded-lg border border-zinc-800 group-hover:border-zinc-700 transition-colors">
-                            <i data-lucide="shield-check" class="w-5 h-5 text-white"></i>
+                            <i data-lucide="download" class="w-5 h-5 text-white"></i>
                          </div>
                         <div class="flex flex-col text-left">
-                            <span class="text-white font-medium">Tailscale Login</span>
-                            <span class="text-[10px] text-zinc-500 uppercase tracking-wider font-semibold group-hover:text-zinc-400">Click to connect</span>
+                            <span class="text-white font-medium">Download Tailscale</span>
+                            <span class="text-[10px] text-zinc-500 uppercase tracking-wider font-semibold group-hover:text-zinc-400">Install the client to connect</span>
                         </div>
                     </div>
                     <i data-lucide="external-link" class="w-4 h-4 text-zinc-600 group-hover:text-white transition-colors"></i>
