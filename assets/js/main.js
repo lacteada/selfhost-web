@@ -19,7 +19,8 @@ const services = [
         desc: "Survival Server",
         icon: "pickaxe",
         isIP: true,
-        secondaryUrl: "https://github.com/benlox44/smp-mods"
+        secondaryUrl: "https://github.com/benlox44/smp-mods",
+        mapUrl: "https://mcmap.lacto.vip"
     }
 ];
 
@@ -105,6 +106,14 @@ function renderServiceCards() {
                    class="${uiConfig.button.base}"
                    title="Open Mods">
                     <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+                ` : ''}
+
+                ${service.mapUrl ? `
+                <a href="${service.mapUrl}" target="_blank" 
+                   class="${uiConfig.button.base}"
+                   title="Live Map">
+                    <i data-lucide="map" class="w-5 h-5"></i>
                 </a>
                 ` : ''}
             </div>
